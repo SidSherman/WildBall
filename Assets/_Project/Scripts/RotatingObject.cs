@@ -12,7 +12,8 @@ public class RotatingObject : MonoBehaviour
     /// <summary>
     /// 0 = Rotating 180 degrees
     /// 1 = Rotating 180 degrees Slowly
-    /// 1 = Rotating 360 degrees
+    /// 2 = Rotating 360 degrees
+    /// 4 = Move
     /// </summary>
     
     void Start()
@@ -33,7 +34,7 @@ public class RotatingObject : MonoBehaviour
 
     void SetRandomAnimState()
     {
-        bool randb = Random.Range(0, 2) == 1 ? true : false;
+        bool randb = Random.Range(0, 100) > 80 ? true : false;
         
         if (randb)
         {
@@ -41,7 +42,7 @@ public class RotatingObject : MonoBehaviour
         }
         else
         {
-            int rand = Random.Range(0,3);
+            int rand = Random.Range(0,4);
             SetAnimState(rand);
         }
     }
