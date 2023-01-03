@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingObject : MonoBehaviour
+public class TestAnimationObject : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private int _animatorState;

@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6550600784401855251}
-  - component: {fileID: 4394599735449221346}
-  - component: {fileID: 5449543887760006950}
+  - component: {fileID: 6550600784401855252}
+  - component: {fileID: 4547771518466820239}
   m_Layer: 0
-  m_Name: RotatingTorus 2
+  m_Name: RotatingAroundCenterTorus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4394599735449221346
+--- !u!95 &6550600784401855252
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -44,7 +44,7 @@ Animator:
   m_GameObject: {fileID: 6550600784401855250}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 03581203da03abc4a843235050250090, type: 2}
+  m_Controller: {fileID: 9100000, guid: 22b72ef7b93e67848aa162d658b7e093, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -54,7 +54,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5449543887760006950
+--- !u!114 &4547771518466820239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67099dff17ba87843a97c170f09513ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anim: {fileID: 4394599735449221346}
-  _animatorState: 2
+  _anim: {fileID: 6550600784401855252}
+  _animatorState: 0
 --- !u!1001 &2146970475253389765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e039c490d4fe81b43ae77f868e2dd190, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e039c490d4fe81b43ae77f868e2dd190, type: 3}
       propertyPath: m_LocalPosition.y
@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e039c490d4fe81b43ae77f868e2dd190, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e039c490d4fe81b43ae77f868e2dd190, type: 3}
       propertyPath: m_LocalRotation.w
