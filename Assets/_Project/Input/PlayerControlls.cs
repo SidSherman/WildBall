@@ -53,6 +53,15 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Use"",
+                    ""type"": ""Button"",
+                    ""id"": ""57e753ca-98e9-4859-8eeb-84e0598609fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -154,6 +163,17 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
                     ""action"": ""Mouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5f60cfc1-c9f4-4263-b8c8-c342e2786a1b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Use"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -165,6 +185,7 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
         m_Ball_Move = m_Ball.FindAction("Move", throwIfNotFound: true);
         m_Ball_Jump = m_Ball.FindAction("Jump", throwIfNotFound: true);
         m_Ball_Mouse = m_Ball.FindAction("Mouse", throwIfNotFound: true);
+        m_Ball_Use = m_Ball.FindAction("Use", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,6 +248,7 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Ball_Move;
     private readonly InputAction m_Ball_Jump;
     private readonly InputAction m_Ball_Mouse;
+    private readonly InputAction m_Ball_Use;
     public struct BallActions
     {
         private @PlayerControlls m_Wrapper;
@@ -234,6 +256,7 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Ball_Move;
         public InputAction @Jump => m_Wrapper.m_Ball_Jump;
         public InputAction @Mouse => m_Wrapper.m_Ball_Mouse;
+        public InputAction @Use => m_Wrapper.m_Ball_Use;
         public InputActionMap Get() { return m_Wrapper.m_Ball; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -252,6 +275,9 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
                 @Mouse.started -= m_Wrapper.m_BallActionsCallbackInterface.OnMouse;
                 @Mouse.performed -= m_Wrapper.m_BallActionsCallbackInterface.OnMouse;
                 @Mouse.canceled -= m_Wrapper.m_BallActionsCallbackInterface.OnMouse;
+                @Use.started -= m_Wrapper.m_BallActionsCallbackInterface.OnUse;
+                @Use.performed -= m_Wrapper.m_BallActionsCallbackInterface.OnUse;
+                @Use.canceled -= m_Wrapper.m_BallActionsCallbackInterface.OnUse;
             }
             m_Wrapper.m_BallActionsCallbackInterface = instance;
             if (instance != null)
@@ -265,6 +291,9 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
                 @Mouse.started += instance.OnMouse;
                 @Mouse.performed += instance.OnMouse;
                 @Mouse.canceled += instance.OnMouse;
+                @Use.started += instance.OnUse;
+                @Use.performed += instance.OnUse;
+                @Use.canceled += instance.OnUse;
             }
         }
     }
@@ -274,5 +303,6 @@ public partial class @PlayerControlls : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnMouse(InputAction.CallbackContext context);
+        void OnUse(InputAction.CallbackContext context);
     }
 }
