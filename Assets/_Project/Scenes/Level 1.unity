@@ -982,6 +982,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1462734627}
     m_Modifications:
+    - target: {fileID: 1717378651913029472, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
+      propertyPath: m_TagString
+      value: DynamicObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869071606997424206, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
+      propertyPath: m_Name
+      value: Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869071606997424206, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
+      propertyPath: m_TagString
+      value: DynamicObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3869071607920675144, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1029,6 +1041,14 @@ PrefabInstance:
     - target: {fileID: 3869071607920675145, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
       propertyPath: m_Name
       value: MovingCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869071608117134293, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515476389790366109, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}

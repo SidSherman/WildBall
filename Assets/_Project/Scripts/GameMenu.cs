@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameMenu : Menu
 {
     [SerializeField] private GameObject _gamePanel;
+    [SerializeField] private TextMeshProUGUI _scoreValue;
     
     public void PauseGame()
     {
@@ -18,6 +20,12 @@ public class GameMenu : Menu
         _gamePanel.SetActive(true);
         _menuPanel.SetActive(false);
         Time.timeScale = 1f;
+    }
+    
+    public void UpdateScoreValue(int value)
+    {
+        if(_scoreValue)
+            _scoreValue.text = "Score: " + value.ToString();
     }
     
 }

@@ -130,22 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1462734627}
     m_Modifications:
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855250, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_Name
       value: RotatingCylincer (3)
@@ -156,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.67414
+      value: 32.67414
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.y
@@ -194,8 +178,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6550600784401855252, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
 --- !u!4 &159343496 stripped
 Transform:
@@ -381,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.174143
+      value: 21.174143
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.y
@@ -495,22 +478,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1462734627}
     m_Modifications:
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855250, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_Name
       value: RotatingCylincer (1)
@@ -521,7 +488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.924143
+      value: 24.924143
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.y
@@ -559,8 +526,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6550600784401855252, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
 --- !u!4 &640902022 stripped
 Transform:
@@ -1049,24 +1015,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56d4f1169389efb4983ece93a5f51977, type: 3}
---- !u!1 &1114681444 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3869071606997424206, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
-  m_PrefabInstance: {fileID: 1706551712}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1114681450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114681444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a20243d44b96e5418c52d9bd21d5d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _root: {fileID: 1617360074}
 --- !u!1 &1191696058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,10 +1752,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1462734627}
     m_Modifications:
-    - target: {fileID: 3869071606997424206, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
-      propertyPath: m_TagString
-      value: DynamicObject
-      objectReference: {fileID: 0}
     - target: {fileID: 3869071607920675144, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1856,18 +1800,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingCube
       objectReference: {fileID: 0}
-    - target: {fileID: 3869071607920675145, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
-      propertyPath: m_TagString
-      value: DynamicObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 3869071608117134293, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 3869071608638680084, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.48
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4bac97033409dd46b51a4abfc611a0c, type: 3}
 --- !u!1001 &1759481722
@@ -1877,22 +1809,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1462734627}
     m_Modifications:
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618691545, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855250, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_Name
       value: RotatingCylincer (2)
@@ -1903,7 +1819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.924143
+      value: 28.924143
       objectReference: {fileID: 0}
     - target: {fileID: 6550600784401855251, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1941,8 +1857,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6550600784401855252, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9040fd96e5ea90d40ab96867661e1587, type: 3}
 --- !u!4 &1759481723 stripped
 Transform:
