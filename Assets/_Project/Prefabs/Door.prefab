@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5954177169056765914}
   - component: {fileID: 248844334}
   - component: {fileID: 248844335}
+  - component: {fileID: 657151420704601519}
   m_Layer: 0
   m_Name: Door
   m_TagString: InteractiveObject
@@ -84,6 +85,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &657151420704601519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954177169056765916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb07b23d052a81478bc447e1f24f172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tooltipTextMesh: {fileID: 0}
+  _tooltip: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 E"
 --- !u!1001 &5954177168555528122
 PrefabInstance:
   m_ObjectHideFlags: 0

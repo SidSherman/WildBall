@@ -258,11 +258,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060e7d216679ee94e874f75e149a03f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _goundAcceleration: 100
-  _rotationSpeed: 3
+  _goundAcceleration: 20
+  _rotationSpeed: 2
   _airAcceleration: 10
-  _jumpHeight: 1000
+  _jumpHeight: 300
+  _dragCoef: 10
   _camera: {fileID: 2009208347}
+  _root: {fileID: 4463531081989051475}
 --- !u!1 &4463531081989051475
 GameObject:
   m_ObjectHideFlags: 0
