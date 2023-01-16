@@ -20,7 +20,9 @@ public class Menu : MonoBehaviour
     //Panels
     [SerializeField] protected GameObject _menuPanel;
     [SerializeField] protected GameObject _levelSelectorPanel;
-    
+
+    public AudioSource AudioSource { get => _audioSource; }
+
     public void SoundOnOff()
     {
         if(_listener.enabled == true)

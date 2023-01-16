@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _deathVFX;
     [SerializeField] private FollowCamera _camera;
     [SerializeField] private GameObject _root;
-
+    [SerializeField] private GameManager _gameManager;
     private List<GameObject> _overlappedObjects;
     
     private Rigidbody _rigidbody;
@@ -43,6 +43,12 @@ public class Player : MonoBehaviour
         _input.Ball.Jump.started += Jump;
         _input.Ball.Mouse.performed += RotateInput;
         _input.Ball.Use.started += UseObjects;
+    }
+
+    private void Start()
+    {
+        if (!_gameManager)
+            _gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnEnable()
@@ -141,6 +147,8 @@ public class Player : MonoBehaviour
             collider.enabled = false;
         }
 
+        if (_gameManager)
+            _gameManager.PlayDeathSound();
         Instantiate(_deathVFX, transform.position, transform.rotation);
     }
     

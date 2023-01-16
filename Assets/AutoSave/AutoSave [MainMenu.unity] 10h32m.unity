@@ -390,6 +390,38 @@ PrefabInstance:
       propertyPath: _listener
       value: 
       objectReference: {fileID: 963194226}
+    - target: {fileID: 7204168522800638213, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168522800638213, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168522800638213, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168522800638213, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168523240460985, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168523240460985, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168523240460985, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204168523240460985, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7204168524124047216, guid: e796855a9c573c948bfa8a190bb1bbcd, type: 3}
       propertyPath: m_Name
       value: MenuCanvas
