@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _jumpHeight;
     [SerializeField] private float _dragCoef;
     
-    [SerializeField] private ParticleSystem _deathVFX;
+    [SerializeField] private GameObject _deathVFX;
     [SerializeField] private FollowCamera _camera;
     [SerializeField] private GameObject _root;
 
@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
             var newZ = _rigidbody.velocity.z > 0 ? - _dragCoef*  Time.fixedDeltaTime : _dragCoef*  Time.fixedDeltaTime;
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x + newX, _rigidbody.velocity.y, _rigidbody.velocity.z +newZ);
         }
+    
         _rigidbody.AddForce(force, ForceMode.Acceleration);
     }
     
@@ -127,21 +128,40 @@ public class Player : MonoBehaviour
     public void Death()
     {
         _isDead = true;
-        _canMove = false;
-        
+
         if(TryGetComponent(out MeshRenderer renderer))
         {
             renderer.enabled = false;
         }
-        if(_rigidbody)
-        {
-            _rigidbody.isKinematic = true;
-        }
+
+        DeactivateMovement();
+        
         if(TryGetComponent(out Collider collider))
         {
             collider.enabled = false;
         }
-        _deathVFX.Play();
+
+        Instantiate(_deathVFX, transform.position, transform.rotation);
+    }
+    
+    public void DeactivateMovement()
+    {
+        _canMove = false;
+        
+        if(_rigidbody)
+        {
+            _rigidbody.isKinematic = true;
+        }
+    }
+    
+    public void ActivateMovement()
+    {
+        _canMove = true;
+        
+        if(_rigidbody)
+        {
+            _rigidbody.isKinematic = false;
+        }
     }
     
     private void UseObjects(InputAction.CallbackContext context)

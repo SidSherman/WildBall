@@ -6,7 +6,7 @@ using UnityEngine;
 public class Coin : InteractiveObject
 {
     [SerializeField] private GameManager _gameManager;
-    [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private GameObject _particleSystem;
 
     private void Start()
     {
@@ -21,6 +21,7 @@ public class Coin : InteractiveObject
     {
         base.Activate();
         _gameManager.UpdateScore(1);
+        Instantiate(_particleSystem, transform.position, transform.rotation);
         Destroy(gameObject);
     }
     

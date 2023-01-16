@@ -1,19 +1,32 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Finish : MonoBehaviour
 {
     [SerializeField] private SceneLoader _sceneLoader;
+    [SerializeField] private GameManager _gameManager;
     [SerializeField] private int _nextIndex;
+    [SerializeField] private GameObject _finishVFX;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _sceneLoader.LoadSceneByIndex(_nextIndex);
+            _gameManager.LoadFinishMessage();
+            Instantiate(_finishVFX, other.gameObject.transform.position, other.gameObject.transform.rotation);
+            StartCoroutine(WaitToNewLevel(3));
+            if (other.gameObject.TryGetComponent(out Player player))
+            {
+                player.DeactivateMovement();
+            }
         }
     }
+
+    private IEnumerator WaitToNewLevel(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        _sceneLoader.LoadSceneByIndex(_nextIndex);
+    }
+
 }

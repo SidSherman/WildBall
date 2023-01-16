@@ -7,6 +7,7 @@ public class GameMenu : Menu
 {
     [SerializeField] private GameObject _gamePanel;
     [SerializeField] private TextMeshProUGUI _scoreValue;
+    [SerializeField] private TextMeshProUGUI _messageText;
     
     public void PauseGame()
     {
@@ -28,4 +29,9 @@ public class GameMenu : Menu
             _scoreValue.text = "Score: " + value.ToString();
     }
     
+    public void UpdateMessage(string value)
+    {
+        if(_messageText)
+            _messageText.text = value.ToString();
+    }
 }

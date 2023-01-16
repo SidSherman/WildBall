@@ -62,7 +62,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneLoader: {fileID: 5869748930564399141}
+  _gameManager: {fileID: 0}
   _nextIndex: 0
+  _finishVFX: {fileID: 7305185502956871417, guid: 85b062a5517cf8345bb6784ffbed4877, type: 3}
 --- !u!114 &5869748930564399141
 MonoBehaviour:
   m_ObjectHideFlags: 0
